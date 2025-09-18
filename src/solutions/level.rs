@@ -1,5 +1,4 @@
 pub trait Level {
-    const LEVEL: usize;
-
+    fn level(&self) -> usize;
     fn solve(&self, input: &str) -> Option<String>;
 }
